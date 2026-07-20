@@ -13,6 +13,13 @@ input {
     padding: 8px;
 }
 
+input:focus {
+    outline: none;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 1px black;
+}
+
 button {
     padding: 10px;
     width: 100%;
@@ -23,8 +30,15 @@ button {
     cursor: pointer;
 }
 
+button:focus-visible {
+    outline: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 1px black;
+}
+
 button:hover {
     background-color: #b3b3b3;
+    color: #282828;
 }
 
 .output {
