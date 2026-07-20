@@ -33,15 +33,17 @@ function hitung() {
   const standarDeviasi = Math.sqrt(variance);
 
   // Tampilkan hasil
+  const output = document.getElementById("output");
+  output.classList.remove("hidden");
   if (freqMax == 1) {
-      document.getElementById("output").innerHTML = `
+      output.innerHTML = `
           <strong>Hasil Perhitungan:</strong><br>
           Rata-rata produk terjual: ${rataRata.toFixed(2)} produk per hari.<br>
           Penjualan paling sering terjadi: Tidak ada.<br>
           Standar deviasi: ${standarDeviasi.toFixed(2)}.
       `;
   } else {
-      document.getElementById("output").innerHTML = `
+      output.innerHTML = `
           <strong>Hasil Perhitungan:</strong><br>
           Rata-rata produk terjual: ${rataRata.toFixed(2)} produk per hari.<br>
           Penjualan paling sering terjadi: ${modus} produk dan terjadi sebanyak ${freqMax} hari.<br>
@@ -50,7 +52,9 @@ function hitung() {
   }
 
   // Buat atau update grafik
-  const ctx = document.getElementById('grafikPenjualan').getContext('2d');
+  const ctx = document.getElementById('grafikPenjualan');
+  ctx.classList.remove("hidden");
+  ctx.getContext('2d');
 
   // Hapus grafik lama jika ada
   if (window.grafikInstance) {
