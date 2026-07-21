@@ -90,10 +90,10 @@ function hitung() {
               }
           }
       }
-  });
-
+  });  
+  
   window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: 'smooth'
-    });
+    top: document.documentElement.scrollHeight,
+    behavior: 'smooth'
+  });
 }
