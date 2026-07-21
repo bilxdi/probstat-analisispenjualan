@@ -47,6 +47,11 @@ button:hover {
     color: #282828;
 }
 
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
 .output {
     margin-top: 20px;
     background: #f4f4f4;
