@@ -3,11 +3,12 @@ function hitung() {
   for (let i = 1; i <= 7; i++) {
       const nilai = parseInt(document.getElementById(`hari${i}`).value);
       if (isNaN(nilai)) {
-          alert(`Mohon isi semua data.`);
+          document.getElementById('error').textContent = "Mohon isi semua data";
           return;
       }
       data.push(nilai);
   }
+  document.getElementById('error').textContent = "";
 
   // Hitung rata-rata
   const total = data.reduce((jumlah, nilai) => jumlah + nilai, 0);
