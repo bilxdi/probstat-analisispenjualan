@@ -9,23 +9,28 @@
   <title>Analisis Penjualan Mingguan</title>
 </head>
 <body>
-  <h2>Analisis Penjualan Mingguan</h2>
-  <p>Masukkan jumlah produk yang terjual selama 7 hari:</p>
-
-  <div id="inputs">
-    <input type="number" id="hari1" placeholder="Hari ke-1">
-    <input type="number" id="hari2" placeholder="Hari ke-2">
-    <input type="number" id="hari3" placeholder="Hari ke-3">
-    <input type="number" id="hari4" placeholder="Hari ke-4">
-    <input type="number" id="hari5" placeholder="Hari ke-5">
-    <input type="number" id="hari6" placeholder="Hari ke-6">
-    <input type="number" id="hari7" placeholder="Hari ke-7">
+  <div style="max-width: 200px;">
+    <button id="theme-toggle" aria-label="Toggle dark mode" tabindex="-1">Switch Theme</button>
   </div>
-
-  <button onclick="hitung()">Hitung Penjualan</button>
-  <small class="error" id="error"></small>
-
-  <div class="output hidden" id="output"></div>
-  <canvas class="hidden" id="grafikPenjualan" width="400" height="200"></canvas>
+  <div class="main">
+    <h2>Analisis Penjualan Mingguan</h2>
+    <p>Masukkan jumlah produk yang terjual selama 7 hari:</p>
+  
+    <div id="inputs">
+      <input type="number" id="hari1" placeholder="Hari ke-1">
+      <input type="number" id="hari2" placeholder="Hari ke-2">
+      <input type="number" id="hari3" placeholder="Hari ke-3">
+      <input type="number" id="hari4" placeholder="Hari ke-4">
+      <input type="number" id="hari5" placeholder="Hari ke-5">
+      <input type="number" id="hari6" placeholder="Hari ke-6">
+      <input type="number" id="hari7" placeholder="Hari ke-7">
+    </div>
+  
+    <button onclick="hitung()">Hitung Penjualan</button>
+    <small class="error" id="error"></small>
+  
+    <div class="output hidden" id="output"></div>
+    <canvas class="hidden" id="grafikPenjualan" width="400" height="200"></canvas>
+  </div>
 </body>
 </html>
