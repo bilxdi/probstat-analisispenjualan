@@ -3,6 +3,8 @@
     --main-bg-color: white;
     --main-text-color: black;
     --main-border-color: #ccc;
+    --input-bg-color: white;
+    --input-text-color: black;
     --input-focus-shd-color: black;
     --input-border-color: #808080;
     --input-placeholder-color: #808080;
@@ -20,14 +22,19 @@
     --body-bg-color: #1f1f1f;
     --main-bg-color: #1f1f1f;
     --main-text-color: #e0e0e0;
-    --main-border-color: #757575;
+    --main-border-color: #656565;
+    --input-bg-color: #1f1f1f;
+    --input-text-color: #e0e0e0;
     --input-focus-shd-color: white;
-    --btn-bg-color: #808080;
-    --btn-text-color: white;
-    --btn-focus-shd-color: black;
-    --btn-hover-bg-color: #b3b3b3;
-    --btn-hover-text-color: #282828;
-    --output-bg-color: #f4f4f4;
+    --input-border-color: #616161;
+    --input-placeholder-color: #616161;
+    --input-hover-border-color: #9a9a9a;
+    --btn-bg-color: #3f3f3f;
+    --btn-text-color: #e0e0e0;
+    --btn-focus-shd-color: white;
+    --btn-hover-bg-color: #4f4f4f;
+    --btn-hover-text-color: #e0e0e0;
+    --output-bg-color: #2f2f2f;
 }
 
 body {
@@ -56,6 +63,8 @@ input {
     margin-bottom: 10px;
     padding: 8px;
     box-sizing: border-box;
+    color: var(--input-text-color);
+    background-color: var(--input-bg-color);
     border: 1px solid var(--input-border-color);
 }
 
