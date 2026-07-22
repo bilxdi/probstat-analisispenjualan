@@ -4,12 +4,12 @@
     --main-text-color: black;
     --main-border-color: #ccc;
     --input-focus-shd-color: black;
-    --btn-bg: #808080;
-    --btn-text: white;
-    --btn-focus-shd: black;
-    --btn-hover-bg: #b3b3b3;
-    --btn-hover-text: #282828;
-    --output-bg: #f4f4f4;
+    --btn-bg-color: #808080;
+    --btn-text-color: white;
+    --btn-focus-shd-color: black;
+    --btn-hover-bg-color: #b3b3b3;
+    --btn-hover-text-color: #282828;
+    --output-bg-color: #f4f4f4;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -19,12 +19,12 @@
     --main-text-color: #e0e0e0;
     --main-border-color: #757575;
     --input-focus-shd-color: white;
-    --btn-bg: #808080;
-    --btn-text: white;
-    --btn-focus-shd: black;
-    --btn-hover-bg: #b3b3b3;
-    --btn-hover-text: #282828;
-    --output-bg: #f4f4f4;
+    --btn-bg-color: #808080;
+    --btn-text-color: white;
+    --btn-focus-shd-color: black;
+    --btn-hover-bg-color: #b3b3b3;
+    --btn-hover-text-color: #282828;
+    --output-bg-color: #f4f4f4;
 }
 
 body {
@@ -74,8 +74,8 @@ input:focus {
 button {
     padding: 10px;
     width: 100%;
-    background-color: var(--btn-bg);
-    color: var(--btn-text);
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -84,12 +84,12 @@ button {
 button:focus-visible {
     outline: none;
     border-radius: 0;
-    box-shadow: 0 0 0 1px var(--btn-focus-shd);
+    box-shadow: 0 0 0 1px var(--btn-focus-shd-color);
 }
 
 button:hover {
-    background-color: var(--btn-hover-bg);
-    color: var(--btn-hover-text);
+    background-color: var(--btn-hover-bg-color);
+    color: var(--btn-hover-text-color);
 }
 
 .error {
@@ -99,7 +99,7 @@ button:hover {
 
 .output {
     margin-top: 20px;
-    background: var(--output-bg);
+    background: var(--output-bg-color);
     padding: 15px;
     border-radius: 8px;
 }
